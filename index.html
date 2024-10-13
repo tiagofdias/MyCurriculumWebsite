@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/menu.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Tiago Dias's Website</title>
+</head>
+
+<style>
+    a {
+        color: inherit;
+    }
+</style>
+
+<body>
+    <header>
+        
+        <nav id="navbar">
+            <i class ="fa-solid fa-bug" id ="nav_logo" style = "cursor:pointer; color: rgb(0, 136, 180);" onClick="window.location.reload();"> Tiago Dias</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications">Certifications</a>
+                </li>
+            </ul>
+
+            <button class="btn-default" style="color: white;"> 
+                <a href="#education" style =  "text-decoration: none;"> Find Out More</a>
+            </button>
+         
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications">Certifications</a>
+                </li>
+                <button class="btn-default" style="color: white;">
+                    <a href="#education" style = "text-decoration: none;"> Find Out More</a>
+                </button>
+            </ul>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title" style="color: white;">
+                    Here is the place where you can know me better.
+                </h1>
+
+                <p class="description" style="color: white;">
+                    I’m a programmer with strong problem-solving skills, adaptability, critical thinking, attention to detail, creativity and empathy for understanding user needs.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#education" class="btn-default" style="color: white;">
+                        Find Out More
+                    </a>
+                </div>
+                <div class="social-media-buttons">
+                    <a href="https://www.linkedin.com/in/tiagofdias/">
+                        <i class="fa-brands fa-linkedin" style = "color: #ffffff;"></i>
+                    </a>
+                    <a href="https://github.com/tiagofdias">
+                        <i class="fa-brands fa-github" style = "color: #ffffff;"></i>
+                    </a>
+                    <a href="mailto:tiagodias.cl@gmail.com">
+                        <i class="fa-regular fa-envelope" style = "color: #ffffff;"></i>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div id="banner">
+                <img src="src/images/tiago.png" alt="Foto de Perfil">
+            </div>
+        </section>
+        
+
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <h3 class="section-subtitle">Here you can find my academic achievements.</h3>
+
+            <div id="dishes">
+                <div class="dish">
+
+                    <img src="src/images/istec_logo.jpg" class="dish-image" alt="">
+
+                    <h3 class="dish-title" style="color: rgba(0, 0, 0, 0.63);">
+                        Institute of Advanced Technologies
+                    </h3>
+
+                    <span class="dish-description" style="color: rgb(0, 0, 0);">
+                        Master's in Computer Science
+                    </span>
+                    <span class="dish-description"></span>
+                    <div class="dish-price">
+                        <button class="btn-default">
+                            <a href="https://www.istec.pt/index.php/en/master-in-computer-science/"
+                                class="fa-solid fa-graduation-cap " style="text-decoration:none; color: #ffffff;"></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+
+                    <img src="src/images/istec_logo.jpg" class="dish-image" alt="">
+
+                    <h3 class="dish-title" style="color: rgba(0, 0, 0, 0.63);">
+                        Institute of Advanced Technologies
+                    </h3>
+
+                    <span class="dish-description" style="color: rgb(0, 0, 0);">
+                        Bachelor's in Computer Science
+                    </span>
+                    <span class="dish-description"></span>
+                    <div class="dish-price">
+                        <button class="btn-default">
+                            <a href="https://www.istec.pt/index.php/en/eng_licenciatura-em-informatica/"
+                                class="fa-solid fa-graduation-cap " style="text-decoration:none; color: #ffffff;"></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+
+                    <img src="src/images/istec_logo.jpg" class="dish-image" alt="">
+
+                    <h3 class="dish-title" style="color: rgba(0, 0, 0, 0.63);">
+                        Institute of Advanced Technologies
+                    </h3>
+
+                    <span class="dish-description" style="color: rgb(0, 0, 0);">
+                        Higher Technical Vocacional Course in Business IT
+                    </span>
+
+                    <div class="dish-price">
+                        <button class="btn-default">
+                            <a href="https://www.istec.pt/index.php/en/ctesp-management-informatics/"
+                                class="fa-solid fa-graduation-cap " style="text-decoration:none; color: #ffffff;"></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+
+                    <img src="src/images/aefc.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title" style="color: rgba(0, 0, 0, 0.63);">
+                        Forte da Casa High School
+                    </h3>
+
+                    <span class="dish-description" style="color: rgb(0, 0, 0);">
+                        Vocational Course in Programming and Computer Systems Management
+                    </span>
+
+                    <div class="dish-price">
+                        <button class="btn-default">
+                            <a href="https://portal.aefc.edu.pt/2017/06/15/programacao/"
+                                class="fa-solid fa-graduation-cap " style="text-decoration:none; color: #ffffff;"></a>
+                        </button>
+                    </div>
+                </div>
+
+
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <h3 class="section-subtitle">Here you can find my professional experiences.</h3>
+
+            <div id="dishes">
+                <div class="dish">
+
+                    <img src="src/images/Consulteware.jpg" class="dish-image" alt="">
+
+                    <h3 class="dish-title" style="color: rgba(0, 0, 0, 0.63);">
+                        Consulteware - 6 Months Intership
+                    </h3>
+
+                    <span class="dish-description" style="color: rgb(0, 0, 0);">
+                        
+                          <dl>
+                            <dt>Programming in Visual Basic, C#, and T-SQL.</dt><br>
+                            <dt>Developed a time clock system for small businesses using the .NET framework and SQL.</dt><br>
+                            <dt>Worked with relational databases and queries.</dt><br>
+                          </dl>
+                    </span>
+                    <span class="dish-description"></span>
+                    <div class="dish-price">
+                        <button class="btn-default">
+                            <a href="https://www.facebook.com/Consulteware/?locale=pt_PT"
+                                class="fa-solid fa-globe " style="text-decoration:none; color: #ffffff;"></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+
+                    <img src="src/images/ogma.jpg" class="dish-image" alt="">
+
+                    <h3 class="dish-title" style="color: rgba(0, 0, 0, 0.63);">
+                        OGMA - 4 Months Intership
+                    </h3>
+
+                    <span class="dish-description" style="color: rgb(0, 0, 0);">
+                        <dl>
+                            <dt>Assisted in resolving IT tickets in collaboration with Capgemini workers.</dt><br>
+                            <dt>Formatting and configuring Windows operating systems.</dt><br>
+                            <dt>Requirements gathering and IT infrastructure auditing.</dt><br>
+                            <dt>Hardware repairs.</dt><br>
+                          </dl>
+                    </span>
+                    <span class="dish-description"></span>
+                    <div class="dish-price">
+                        <button class="btn-default">
+                            <a href="https://www.ogma.pt/"
+                                class="fa-solid fa-globe " style="text-decoration:none; color: #ffffff;"></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+
+                    <img src="src/images/junta.jpg" class="dish-image" alt="">
+
+                    <h3 class="dish-title" style="color: rgba(0, 0, 0, 0.63); text-align: center;">
+                        Junta de Freguesia da Póvoa de Santa Iria e Forte da Casa - 2 Months Internship
+                    </h3>
+
+                    <span class="dish-description" style="color: rgb(0, 0, 0);">
+                        <dl>
+                            <dt>Assisted in the Front-End development of the local parish council website.</dt><br>
+                            <dt>Used HTML and CSS markup languages.</dt><br>
+                            <dt>Utilized JavaScript programming language.</dt><br>
+                          </dl>
+                    </span>
+
+                    <div class="dish-price">
+                        <button class="btn-default">
+                            <a href="https://jf-povoaforte.pt/"
+                                class="fa-solid fa-globe " style="text-decoration:none; color: #ffffff; "></a>
+                        </button>
+                    </div>
+                </div>
+
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="certifications">
+            <h2 class="section-title">Certifications</h2>
+            <h3 class="section-subtitle">Here you can find all my certifications</h3>
+
+            <div id="dishes">
+                <div class="dish">
+
+                    <img src="src/images/microsoft.jpg" class="dish-image" alt="">
+
+                    <h3 class="dish-title" style="color: rgba(0, 0, 0, 0.63);">
+                        Microsoft
+                    </h3>
+
+                    <span class="dish-description" style="color: rgb(0, 0, 0);">
+                        <dl>
+                            <dt><b>Microsoft Technology Associate:</b></dt>
+                            <dd><a href="https://drive.google.com/file/d/19ESTqQ5S7SBvzntfeuhcn-UIVRbDJ2T7/view">Windows Server Administration Fundamentals</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1uuaTo3F61KaylXdTU9oLV5TFCVYQThYX/view?usp=sharing">Database Administration Fundamentals</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1MZrcEpjvfxiiKcCJJ12_rRwQdxNmcnyG/view">HTML5 Application Development Fundamentals</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1vHdP5yokvOFP_bK5FCjEQAB-eED2zJLp/view?usp=sharing">Introduction HTML and CSS</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1keD5GsddG9_kFuny1wyEmg-qiQ4HpyRQ/view?usp=sharing">Security Fundamentals</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1TtUN6xc21vHlNnJNjHjOu2hr-oECF0Jh/view?usp=sharing">Software Development Fundamentals</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1CtTOydnPJiNu7kYpwlAiBhCBAc3tJuVZ/view?usp=sharing">Windows Operating System Fundamentals</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/10XUDO2fYiK3g6J-9lt2TsIVF0Ifm_d3z/view?usp=sharing">Networking Fundamentals</a></dd><br>
+                            <dt><b>Microsoft Office Specialist:</b></dt>
+                            <dd><a href="https://drive.google.com/file/d/10fee_UgHNOMvfjSL_P-caikbvzNZJYey/view?usp=sharing">Master</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1npc4Y8dkm48ZS72HrqawMm4-asygr0Sj/view">Excel Associate 2019</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1LA1C7Z9V9LbrxTLel64NbL1jN4NbWYJd/view">Word Associate 2019</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1iEaTr_lKmB7GlFzgNHnOV7zq_o7WnMoL/view?usp=sharing">Office Excel 2016 Expert</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1qDrIv2nmWvFJoCVBMDIrjIhJEZ74AcQs/view?usp=sharing">Office Word 2016 Expert</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1XQOhmjX7nyrPv2Nhi2AJxgOJElpjcQEF/view?usp=sharing">Office PowerPoint 2016</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1rFbUrKL_ZnohFBv6cd1eciWlXt73Hbe5/view?usp=sharing">Office Access 2016</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1XUx1wge-OLKh1a2l8Pjhwt5isCvTJuLV/view?usp=sharing">Office Excel 2016</a></dd>   
+                            <dd><a href="https://drive.google.com/file/d/1RtiNalvr9_Eg8YbSJJQWmKuG4p06jmd8/view?usp=sharing">Office Word 2016</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1JyJnbyudwVdpNsQqVdCUgxfDa4UeUIP2/view?usp=sharing">Office Access 2013</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1JmBN0fMKaDFGol6iESmO53m-f7cAMImu/view?usp=sharing">Office Word 2013</a></dd>
+                            <dd><a href="https://drive.google.com/file/d/1yD6kgvWWZfY5cWIDRPoZ5jGz85SbcnEH/view?usp=sharing">Office Excel® 2013</a></dd>
+                          </dl>
+                    </span>
+                    <span class="dish-description"></span>
+                </div>
+
+                <div class="dish">
+                <br>
+                    <img src="src/images/aws.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title" style="color: rgba(0, 0, 0, 0.63);">
+                        <br>
+                        Amazon Web Services (AWS)
+                    </h3>
+
+                    <span class="dish-description" style="color: rgb(0, 0, 0);">
+                        <dl>     
+                            <dd><a href="https://www.credly.com/badges/0e01daed-0d75-4d98-a0a4-30a257e9ba7b/linked_in_profile">AWS Educate Getting Started with Networking</a></dd>
+                            <dd><a href="https://www.credly.com/badges/18407a01-cc0b-4073-8d43-06e2ead31c82/linked_in_profile">AWS Educate Getting Started with Security</a></dd>
+                            <dd><a href="https://www.credly.com/badges/1be5b38d-2926-416a-ad20-657535435976/linked_in_profile">AWS Educate Getting Started with Storage</a></dd>
+                            <dd><a href="https://www.credly.com/badges/9807c2a4-26d9-4195-80c2-12fd978e52f2/linked_in_profile">AWS Educate Getting Started with Databases</a></dd>
+                            <dd><a href="https://www.credly.com/badges/5d1cc3ca-ad63-4aff-9818-0d18e8feb1c5/linked_in_profile">AWS Educate Getting Started with Compute</a></dd>
+                            <dd><a href="https://www.credly.com/badges/9a1235c8-6264-49ed-8190-24761f824e33/linked_in_profile">AWS Educate Getting Started with Cloud Ops</a></dd>
+                            <dd><a href="https://www.credly.com/badges/9ae8215a-fd3f-4481-aa30-aa1f238d3bcc/linked_in_profile">AWS Educate Introduction to Cloud 101</a></dd>  
+                        </dl>
+                    </span>
+                    <span class="dish-description"></span>
+                </div>
+
+                <div class="dish">
+
+                    <img src="src/images/cisco.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title" style="color: rgba(0, 0, 0, 0.63);">
+                        <br><br>
+                        Cisco
+                    </h3>
+
+                    <span class="dish-description" style="color: rgb(0, 0, 0);">
+                        <dl>
+                            <dt><a href="https://www.credly.com/badges/8f364ba1-98b0-4f0d-a7bc-b9d73b5083ee/linked_in_profile">Ethical Hacker</a></dt>
+                            <dt><a href="https://www.credly.com/badges/046579dd-30a9-46d9-84da-15fe42972e83/linked_in_profile">English for IT 2</a></dt>
+                            <dt><a href="https://www.credly.com/badges/9610f683-abb2-40c0-ac91-d8a08af47461/linked_in_profile">English for IT 1</a></dt>
+                            <dt><a href="https://www.credly.com/badges/ec97eb6f-84a0-42c3-a5e8-c82edc8b92ff/linked_in_profile">JavaScript Essentials 1</a></dt>
+                            <dt><a href="https://www.credly.com/badges/234fa471-fdf7-48c4-b6d4-e6187f81f7ec/linked_in_profile">Data Analytics Essentials</a></dt>
+                            <dt><a href="https://www.credly.com/badges/4b79d5f3-33e5-4508-ad08-88f330dc065f/linked_in_profile">Computer Hardware Basics</a></dt>
+                            <dt><a href="https://www.credly.com/badges/108b956c-024c-44dc-8562-c4a6ce77309d/linked_in_profile">Introduction to Data Science</a></dt>
+                          </dl>
+                    </span>
+
+                </div>
+
+                <div class="dish">
+
+                    <img src="src/images/Google.jpg" class="dish-image" alt="">
+
+                    <h3 class="dish-title" style="color: rgba(0, 0, 0, 0.63);">
+                        Google
+                    </h3>
+
+                    <span class="dish-description" style="color: rgb(0, 0, 0);">
+                        <dl>
+                            <dt><a href="https://drive.google.com/file/d/1npaaS2NJC53KCGVmi-8SKmiIi98mqY7s/view?usp=sharing">Fundamentals of digital marketing</a></dt>
+                          </dl>
+                    </span>
+
+                </div>
+
+        </section>
+    </main>
+
+    <section id="testimonials">
+      
+
+        <div id="testimonials_content">
+            <h2 class="section-title">
+                Recommendations
+            </h2>
+            <h3 class="section-subtitle">
+                What others think about me.
+            </h3>
+
+            <div id="feedbacks">
+                <div class="feedback">
+                    <img src="src/images/teixeira.jpg" class="feedback-avatar" alt="">
+
+                    <div class="feedback-content">
+                        <p>
+                            <b>João Teixeira</b>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            "An outstanding colleague, consistently supportive and reliable! Approaches every challenge with adaptability and a practical mindset, contributing to a strong and collaborative team environment."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <img src="src/images/pedro.jpg" class="feedback-avatar" alt="">
+
+                    <div class="feedback-content">
+                        <p>
+                            <b>Pedro Santos</b>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            "Great colleague, always available to help! Ready for any challenge, with great flexibility and pragmatism to ensure smooth teamwork."
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="src/images/vital.jpg" class="feedback-avatar" alt="">
+
+                    <div class="feedback-content">
+                        <p>
+                            <b>Filipe Vital</b>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            "Highly adaptable in learning new technologies, with a focus on delivering robust and scalable software solutions."
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--Waves Container-->
+<div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0, 136, 180,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0, 136, 180,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0, 136, 180,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0, 136, 180,0.7)" />
+        </g>
+    </svg>
+</div>
+<!--Waves end-->
+
+<footer>
+    <img src="" alt="">
+
+    <div id="footer_items">
+        <span id="copyright" style = "color: #ffffff;">
+            &copy 2024 Tiago Dias
+        </span>
+
+        <div class="social-media-buttons2">
+            <a href="https://www.linkedin.com/in/tiagofdias/">
+                <i class="fa-brands fa-linkedin" style = "color: #ffffff;"></i>
+            </a>
+            <a href="https://github.com/tiagofdias">
+                <i class="fa-brands fa-github" style = "color: #ffffff;"></i>
+            </a>
+            <a href="mailto:tiagodias.cl@gmail.com">
+                <i class="fa-regular fa-envelope" style = "color: #ffffff;"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>
