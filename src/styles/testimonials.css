@@ -88,3 +88,23 @@
         flex-direction: column;
     }
 } 
+
+#visuals{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  @media (orientation: landscape) {
+    #visuals{
+      height: 90vh;
+      width: 90vh;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    #visuals{
+      height: 90vw;
+      width: 90vw;
+    }
+  }

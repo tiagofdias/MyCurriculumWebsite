@@ -13,7 +13,7 @@
 }
 
 #cta .title{
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
 }
 
@@ -143,15 +143,5 @@
     font-size:24px;
   }
 }
-
-img.framed {
-    box-shadow:
-      -50px -50px 0 -40px var(--red),
-      50px 50px 0 -40px var(--red);
-  }
-  :root {
-    --red: tomato;
-    --bgColor: bisque;
-  }
 
   

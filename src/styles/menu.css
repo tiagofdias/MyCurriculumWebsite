@@ -30,7 +30,8 @@
 
 .dish-description {
     color: #434343;
-    text-align: center;
+    text-align: left;
+ 
 }
 
 .dish-rate i {
@@ -63,6 +64,6 @@
     }
 
     #menu .section-subtitle {
-        text-align: center;
+        text-align: left;
     }
 }
